@@ -11,9 +11,7 @@ public class Lesson3 {
     Scanner in = new Scanner(System.in);
 
     public void printTimeOfTheYearSwitch(int number) {
-
         switch (number) {
-
             case (12):
             case (1):
             case (2): {
@@ -110,15 +108,12 @@ public class Lesson3 {
     }
 
     public void printOdd() {
-
         System.out.println("Нечетные числа:");
         for (int i = 1; i < 100; i++) {
             if (i % 2 == 1) {
                 System.out.print(i + " ");
             }
-
         }
-
     }
 
     public void printNumbers() {
@@ -126,7 +121,6 @@ public class Lesson3 {
         for (int z = 5; z > 0; z--) {
             System.out.print(z + " ");
         }
-
     }
 
     public void sumAll() {
@@ -140,16 +134,13 @@ public class Lesson3 {
         }
         System.out.println(sumY);
     }
-    public void sequenceSevens (){
-
+    public void sequenceSevens () {
         int sumS=7;
-
         while (sumS<100){
             System.out.print(sumS + " ");
             sumS+=7;
 
         }
-
     }
 
     public void sequenceFives () {
@@ -175,14 +166,13 @@ public class Lesson3 {
         int a1 = 1;
         int a2 = 1;
         int a3;
-        System.out.print(a1+" "+a2+" ");
-        for (int i=3; i<=11; i++){
-            a3=a1+a2;
-            System.out.print(a3+" ");
-            a1=a2;
-            a2=a3;
+        System.out.print(a1 + " " + a2 + " ");
+        for (int i = 3; i<=11; i++){
+            a3= a1 + a2;
+            System.out.print(a3 + " ");
+            a1 = a2;
+            a2 = a3;
         }
-
     }
 
     public void bank() {
@@ -200,16 +190,16 @@ public class Lesson3 {
     }
 
     public void multiplicationTable (){
-            for (int i=1; i<=9; i++){
+            for (int i = 1; i <= 9; i++){
             System.out.println(" ");
             for ( int x = 1 ; x <= 10 ; x++) {
                 System.out.println(i + "*" + x + " = " + i*x + " "); //стандартная таблица умножения
             }
         }
-        for (int i=1; i<=9; i++){
+        for (int i = 1; i <= 9; i++){
             System.out.println(" ");
             for ( int x = 1 ; x <= 10 ; x++) {
-                System.out.print(i*x + "\t");    //таблица Пифагора
+                System.out.print(i * x + "\t");    //таблица Пифагора
             }
         }
     }
