@@ -2,7 +2,6 @@ package lesson3;
 
 public class Main {
     public static void main(String[] args) {
-
         Lesson3 Lesson3 = new Lesson3();
         int number = 10;
         Lesson3.printTimeOfTheYearSwitch(number);
@@ -19,12 +18,5 @@ public class Main {
         Lesson3.fibonachi();
         Lesson3.bank();
         Lesson3.multiplicationTable();
-
-
-
-
     }
-
-
-
 }
