@@ -20,24 +20,20 @@ public class TypeLesson2 {
         exclusiveOR(a, b);
     }
 
-    public static String sumType (String value, int a){
+    public static String sumType (String value, int a) {
         return value + a;
     }
 
-    public static void compare (int a, double b){
-
+    public static void compare (int a, double b) {
         boolean compare = a <= b;
-        double d = a%b;
+        double d = a % b;
 
         System.out.println(compare);
         System.out.println("Остаток от деления " + d);
         System.out.println(compare || true);
     }
 
-    public static void exclusiveOR (int a, double b){
-        System.out.println((int) b^a);
+    public static void exclusiveOR (int a, double b) {
+        System.out.println((int) b ^ a);
     }
-
-
 }
-
