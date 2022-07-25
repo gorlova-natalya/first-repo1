@@ -15,7 +15,9 @@ public class Lesson4 {
             if (x == value) {
                 System.out.println("Число входит в массив.");
                 break;
-            } else System.out.println("Число не входит в массив.");
+            } else {
+                System.out.println("Число не входит в массив.");
+            }
             break;
         }
         System.out.println();
@@ -27,15 +29,15 @@ public class Lesson4 {
         System.out.println("Введите число для удаления:");
         int value = in.nextInt();
         int[] tempArray = new int[array.length];
-        int j = 0;
+        int i = 0;
         int[] newArray;
         for (int item : array) {
             if (item != value) {
-                tempArray[j] = item;
-                j++;
+                tempArray[i] = item;
+                i++;
             }
         }
-        newArray = new int[j];
+        newArray = new int[i];
         for (int k = 0; k < newArray.length; k++) {
             newArray[k] = tempArray[k];
         }
@@ -68,11 +70,11 @@ public class Lesson4 {
         }
         System.out.println("Минимальное значение массива: " + min);
         int sum = 0;
-        int avr = 0;
+        int avr;
         for (int i = 0; i < array.length; i++) {
             sum = sum + array[i];
-            avr = sum / array.length;
         }
+        avr = sum / array.length;
         System.out.println("Среднее значение массива: " + avr);
         System.out.println();
     }
@@ -97,14 +99,16 @@ public class Lesson4 {
             System.out.println("Среднее арифметическое первого массива больше, чем второго.");
         } else if (avr1 < avr2) {
             System.out.println("Среднее арифметическое второго массива больше, чем первого.");
-        } else System.out.println("Средние арифметические равны.");
+        } else {
+            System.out.println("Средние арифметические равны.");
+        }
         System.out.println();
     }
 
     public void evenArray() {
         System.out.println("Введите размер массива (от 5 до 10): ");
         int n = in.nextInt();
-        if (n > 10 || n < 5) {
+        while (n > 10 || n < 5) {
             System.out.println("Введите значение из предложенного ранее диапазона: ");
             int x = in.nextInt();
             n = x;
