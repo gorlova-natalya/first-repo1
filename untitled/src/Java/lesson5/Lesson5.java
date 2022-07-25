@@ -30,8 +30,10 @@ public class Lesson5 {
             for (int j = 0; j < board[i].length; j++) {
                 if ((i + j) % 2 == 0) {
                     board[i][j] = "W";
-                } else board[i][j] = "B";
-                System.out.print(board[i][j] + " ");
+                } else {
+                    board[i][j] = "B";
+                    System.out.print(board[i][j] + " ");
+                }
             }
             System.out.println();
         }
