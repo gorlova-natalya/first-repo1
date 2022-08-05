@@ -2,7 +2,7 @@ package Java.lesson8.clinic;
 
 public class TreatmentPlan {
 
-    int treatmentPlan;
+    private int treatmentPlan;
 
     public TreatmentPlan() {
     }

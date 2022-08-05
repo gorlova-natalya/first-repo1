@@ -19,7 +19,7 @@ public class ClinicMain {
         patient3.treatmentPlan.appointDoctor();
 
         for (Patient patient : patients) {
-            int plan = patient.treatmentPlan.treatmentPlan;
+            int plan = patient.treatmentPlan.getTreatmentPlan();
             if (plan == 1) {
                 surgeon.heal();
             } else if (plan == 2) {
