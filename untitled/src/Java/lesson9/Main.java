@@ -33,7 +33,7 @@ public class Main {
         System.out.println("Вектор C: " + vectorC);
         System.out.println("Вектор D: " + vectorD);
 
-        System.out.println(Arrays.toString(TwoDimensionalVector.randomVectorArray(7)));
+        System.out.println(Arrays.toString(TwoDimensionalVector.randomVectorArray(4)));
         System.out.println(Arrays.toString(ThreeDimensionalVector.randomVectorArray(5)));
 
         TwoDimensionalVector.compareVectorLength(vectorA, vectorB);
@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Произведение " + vector1.scalarMultiplication(vector));
         System.out.println("Сумма " + vector1.addingVectors(vector));
         System.out.println("Разность " + vector1.subtractingVectors(vector));
-
+Vector.compareVectorLength(vector, vector1);
         System.out.println(Arrays.toString(Vector.generate(3, 4)));
     }
 }

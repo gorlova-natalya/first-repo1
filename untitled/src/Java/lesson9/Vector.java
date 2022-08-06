@@ -90,6 +90,18 @@ public class Vector implements Usable {
         return vectors;
     }
 
+    public static void compareVectorLength(Vector vector, Vector vector1) {
+        double length = vector.calculationVectorLength();
+        double length1 = vector1.calculationVectorLength();
+        if (length < length1) {
+            System.out.println("Длина второго вектора больше: " + length + " < " + length1);
+        } else if (length > length1) {
+            System.out.println("Длина первого вектора больше: " + length + " > " + length1);
+        } else if (length == length1) {
+            System.out.println("Длины векторов равны : " + length + " = " + length1);
+        }
+    }
+
     @Override
     public String toString() {
         return DESCRIPTION + " {" +
