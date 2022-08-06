@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Произведение " + vector1.scalarMultiplication(vector));
         System.out.println("Сумма " + vector1.addingVectors(vector));
         System.out.println("Разность " + vector1.subtractingVectors(vector));
-Vector.compareVectorLength(vector, vector1);
+        Vector.compareVectorLength(vector, vector1);
         System.out.println(Arrays.toString(Vector.generate(3, 4)));
     }
 }
