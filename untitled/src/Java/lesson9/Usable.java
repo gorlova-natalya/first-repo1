@@ -10,9 +10,4 @@ public interface Usable {
     void addingVectors (ThreeDimensionalVector vectorD);
     void subtractingVectors(TwoDimensionalVector vectorB);
     void subtractingVectors(ThreeDimensionalVector vectorD);
-
-
-
-
-
 }
