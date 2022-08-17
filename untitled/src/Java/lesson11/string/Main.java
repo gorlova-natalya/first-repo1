@@ -7,23 +7,23 @@ public class Main {
         String str = "5554-ABC-3245-def-7j8h";
         String str1 = "4444-cab-3245-def-1a2b";
 
-        StringService.containsAbc(str);
+        StringService.containsSymbols(str);
         try {
-            StringService.containsAbc(str1);
+            StringService.containsSymbols(str1);
         } catch (SequenceInTheNumberException e) {
             System.out.println(e.getMessage());
         }
 
-        StringService.startCheck555(str);
+        StringService.startCheck(str);
         try {
-            StringService.startCheck555(str1);
+            StringService.startCheck(str1);
         } catch (NumberBeginningFormatException e) {
             System.out.println(e.getMessage());
         }
 
-        StringService.endCheck1a2b(str1);
+        StringService.endCheck(str1);
         try {
-            StringService.endCheck1a2b(str);
+            StringService.endCheck(str);
         } catch (NumberEndFormatException e) {
             System.out.println(e.getMessage());
         }
